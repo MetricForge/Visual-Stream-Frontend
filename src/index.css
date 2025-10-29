@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Test style to confirm CSS is loaded */
+body {
+  background-color: #1a1a1a; /* Dark gray background to confirm CSS application */
+}
+
+/* Prevent black outline on pie chart click */
+.recharts-wrapper *:focus {
+  outline: none !important;
+}
+
+/* -------------------
+   Custom liquid animation
+-------------------- */
+@layer utilities {
+  /* Keyframes for sliding gradient */
+  @keyframes liquid-slide {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+  }
+
+  /* Animate the gradient */
+  .animate-liquid {
+    background: linear-gradient(
+      90deg,
+      #a855f7,  /* medium purple */
+      #7c3aed,  /* darker purple */
+      #5b21b6,  /* dark purple */
+      #6b21a8,  /* rich purple */
+      #5b21b6,
+      #6b21a8,
+      #7c3aed,
+      #a855f7
+    );
+    background-size: 300% 100%;
+    animation: liquid-slide 6s linear infinite;
+  }
+}
+
+/* Apply custom blue scrollbar globally */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #1e293b; /* blue-500 and gray-800 */
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1e293b; /* gray-800 */
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* blue-500 */
+  border-radius: 10px;
+  border: 2px solid #1e293b;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa; /* blue-400 - lighter blue on hover */
+}

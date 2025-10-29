@@ -1,5 +1,4 @@
 # MetricForge - Business Analytics Platform
-# Visual Stream
 
 > Professional analytics platform demonstrating BA methodology and full-stack development capabilities. Features 24+ interactive visualizations, predictive analytics, and real-time productivity insights.
 
@@ -9,7 +8,7 @@
 
 ## 📊 Overview
 
-Visual Stream is a production-grade analytics dashboard built to demonstrate end-to-end business analysis methodology and technical implementation. The platform processes ActivityWatch time-tracking data to provide comprehensive productivity insights through interactive visualizations, predictive modeling, and behavioral pattern analysis.
+MetricForge is a production-grade analytics dashboard built to demonstrate end-to-end business analysis methodology and technical implementation. The platform processes ActivityWatch time-tracking data to provide comprehensive productivity insights through interactive visualizations, predictive modeling, and behavioral pattern analysis.
 
 ### Key Features
 
@@ -52,8 +51,8 @@ Visual Stream is a production-grade analytics dashboard built to demonstrate end
 
 **1. Clone the repository**
 
-    git clone https://github.com/MetricForge/Visual-Stream-frontend.git
-    cd visual-stream-frontend
+    git clone https://github.com/MetricForge/metricforge-frontend.git
+    cd metricforge-frontend
 
 **2. Install dependencies**
 
@@ -68,7 +67,7 @@ Create a `.env.local` file in the root directory with:
     VITE_CREATOR=Your Name
     VITE_CREATOR_DOMAIN=https://linkedin.com/in/yourprofile
     VITE_START_YEAR=2025
-    VITE_GITHUB_URL=https://github.com/MetricForge/visual-stream-frontend
+    VITE_GITHUB_URL=https://github.com/MetricForge/metricforge-frontend
 
 **4. Run the development server**
 
@@ -96,7 +95,7 @@ This generates optimized static files in the `dist/` directory.
 
 ## 📁 Project Structure
 
-    visual-stream-frontend/
+    metricforge-frontend/
     ├── public/              # Static assets
     ├── src/
     │   ├── components/      # React components
